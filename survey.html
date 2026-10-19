@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY FORM</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <p><b>Please Rate your overall Experience in filling up the medical form:</b></p>
+
+    <form action="conform.html">
+    <form id="MedicalForm" onsubmit="handleFormSubmit(event)">
+
+    <div>
+        <label for="very good">Very Good</label>
+            <input
+                type="checkbox"
+                id="very good"
+                name="rate"
+                value="very good">
+
+            <label for="good">Good</label>
+            <input
+                type="checkbox"
+                id="good"
+                name="rate"
+                value="good">
+
+            <label for="neutral">Neutral</label>
+            <input
+                type="checkbox"
+                id="neutral"
+                name="rate"
+                value="neutral">
+
+            <label for="bad">Bad</label>
+            <input
+                type="checkbox"
+                id="bad"
+                name="rate"
+                value="bad">
+
+            <label for="very bad">Very Bad</label>
+            <input
+                type="checkbox"
+                id="very bad"
+                name="rate"
+                placeholder="very bad">
+    </div>
+    <br>
+
+    <p><b>Suggestions (Write "N/A" if none):</b></p>
+    <div>
+        <label for = "suggestions">Suggestions: </label>
+            <textarea
+                id="suggestions"
+                name="suggestions"
+                rows="2"
+                required
+                placeholder="suggestions">
+            </textarea>
+    </div>
+    <br>
+
+    <p><b>How Likely are you to use the medical form again?</b></p>
+    <div>
+        <label for="number">Rate from 1-10: *</label>
+            <input 
+                    type = "number" 
+                    id="number" 
+                    name="number" 
+                    min="1"
+                    max="10"
+                    value="rating"
+                    required 
+                    placeholder="Rate here">
+    </div>
+    <br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Clear Form</button>
+
+    </form>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICAL FORM</title>
+</head>
+
+
+<body>
+    
+    <section>
+        <div>
+            <h1>MEDICAL FORM</h1>
+            <h2>Patient Information</h2>
+
+        <form action="conformation.html">
+        <form id="MedicalForm" onsubmit="handleFormSubmit(event)">
+        
+            <label for="name">Full Name *</label>
+            <input 
+                    type = "text" 
+                    id="name" 
+                    name="name" 
+                    required 8
+                    placeholder="Your Name">
+
+            <label for="female">Female</label>
+            <input 
+                    type = "radio" 
+                    id="female" 
+                    name="sex" 
+                    value="female">
+
+             <label for="male">Male</label>
+            <input 
+                    type = "radio" 
+                    id="male"
+                    name="sex" 
+                    value="male">
+
+        </div>
+        <br>
+
+        <div>
+
+            <label for="birth">birth *</label>
+            <input 
+                    type = "text" 
+                    id="birth" 
+                    name="birth" 
+                    required 
+                    placeholder="Your birth date">
+
+            <label for="date">date *</label>
+            <input 
+                    type = "text" 
+                    id="date" 
+                    name="date" 
+                    required 
+                    placeholder="Date Today">
+
+        </div>
+        <br>
+
+        <div>
+
+            <label for="number">Number *</label>
+            <input 
+                    type = "text" 
+                    id="number" 
+                    name="number" 
+                    required 
+                    placeholder="090000000">
+
+            <label for="email">Email *</label>
+            <input 
+                    type = "text" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    placeholder="name@email.com">
+
+        </div>
+        <br>
+        <div>
+
+            <label for = "address">Address</label>
+            <textarea
+                id="address"
+                name="address"
+                rows="1"
+                required
+                placeholder="Address">
+
+             </textarea>
+
+            <label for = "blood type">Blood Type</label>
+                <select 
+                    id="blood type" 
+                    name="blood type"
+                    required>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+        </div>
+        <br>
+
+        <div>
+
+            <label for="height">height *</label>
+            <input 
+                    type = "text" 
+                    id="height" 
+                    name="height" 
+                    required 
+                    placeholder="00 cm">
+
+            <label for="weight">weight *</label>
+            <input 
+                    type = "text" 
+                    id="weight" 
+                    name="weight" 
+                    required 
+                    placeholder="00 kg">
+    
+        </div>
+        <br>
+        <hr>
+        
+        <div>
+            <h1>Medical History</h1>
+            <p><b>Have you had any of the following conditions? (check all that apply)</b></p>
+
+            <label for="heart disease">Heart Disease</label>
+            <input
+                type="checkbox"
+                id="heart disease"
+                name="condition"
+                value="heart disease">
+
+            <label for="diabetes">Diabetes</label>
+            <input
+                type="checkbox"
+                id="diabetes"
+                name="condition"
+                value="diabetes">
+
+            <label for="hypertension">Hypertension</label>
+            <input
+                type="checkbox"
+                id="hypertension"
+                name="condition"
+                value="hypertension">
+
+            <label for="cancer">Cancer</label>
+            <input
+                type="checkbox"
+                id="cancer"
+                name="condition"
+                value="cancer">
+
+            <label for="other">other:</label>
+            <input
+                type="text"
+                id="other"
+                name="condition"
+                placeholder="other">
+
+        </div>
+        <br>
+
+        <div>
+            <p><b>Medication (write "N/A" if none):</b></p>
+
+            <label for = "medicated">Medicated: </label>
+            <textarea
+                id="medicated"
+                name="medicated"
+                rows="2"
+                required
+                placeholder="medicated">
+
+            </textarea>
+            
+            <p><b>Allergies (write "N/A" if none):</b></p>
+
+            <label for = "allergies">Allergies: </label>
+            <textarea
+                id="allergies"
+                name="allergies"
+                rows="2"
+                required
+                placeholder="allergies">
+
+             </textarea>
+        </div>
+        <br>
+
+        <div>
+            <h1>Reason for Visit</h1>
+            <p><b>Describe your symptoms:</b></p>
+
+            <label for = "symptoms"></label>
+            <textarea
+                id="symptoms"
+                name="symptoms"
+                rows="10"
+                required
+                placeholder="symptoms">
+
+            </textarea>
+        </div>
+        <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear Form</button>
+
+        </form>
+        </form>
+    </section>
+
+
+</body>
+</html>
